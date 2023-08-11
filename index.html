@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Lumos.png" type="image/x-icon">
+    <title>Lumos - Your Gateway to Dazzling Gradients!</title>
+</head>
+
+<body class="overflow-hidden">
+    <nav class="w-screen h-12 bg-gray-900 flex text-center items-center justify-around">
+        <div class=" flex text-center items-center">
+            <h3 class="ml-4 text-bold text-white text-2xl">Lumos </h3>
+            <img src="assets/Lumos.png" class="h-7 pl-3">
+        </div>
+        
+
+        <div class="preview_grad flex justify-around w-36">
+            <div id="color1Preview" class="w-8 h-8 mt-1 border rounded"></div>
+            <div id="color2Preview" class="w-8 h-8 mt-1 border rounded"></div>
+        </div>
+
+        <ol class="flex">
+            <li>
+                <button type="button"
+                    class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-1.5 text-center mr-2 mb-1"
+                    onclick="generate()">Generate Magic!</button>
+            </li>
+
+            <li>
+                <button type="button"
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-1.5 text-center mr-2 mb-1"
+                    onclick="copy()">Copy
+                    to Clipboard</button>
+            </li>
+        </ol>
+    </nav>
+
+    </div>
+
+
+
+    <div class="h-screen w-screen flex items-center justify-center" id="gradient">
+        <div class="w-full" id="welcome">
+            <h1
+                class="flex items-center justify-center mb-4 text-[2.5rem] leading-none font-semibold tracking-tight text-[#ffffff] text-custom">
+                Welcome to Lumos - Your Gateway to Dazzling Gradients!</h1>
+            <p
+                class="flex items-center justify-evenly text-center mb-6 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">
+                Unlock a world of vibrant possibilities with Lumos, where creativity and technology converge to bring
+                you stunning gradient backgrounds for your projects. Whether you're a web developer, designer, or simply
+                a creative soul, Lumos empowers you to infuse your work with mesmerizing color transitions.</p>
+
+        </div>
+           
+    <script src="scripts/main.js"></script>
+</body>
+</html>
