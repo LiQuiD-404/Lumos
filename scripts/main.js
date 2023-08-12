@@ -1,6 +1,8 @@
 let background_syntax = '';
 const color1Preview = document.getElementById('color1Preview');
 const color2Preview = document.getElementById('color2Preview');
+const color1_mobile = document.getElementById('color1_mobile');
+const color2_mobile = document.getElementById('color2_mobile');
 let col1 = '';
 let col2 = '';
 
@@ -9,8 +11,10 @@ function generate() {
     let element = document.getElementById("gradient");
     col1 = generateRandomHexColor();
     color1Preview.style.backgroundColor = col1;
+    color1_mobile.style.backgroundColor = col1;
     col2 = generateRandomHexColor();
     color2Preview.style.backgroundColor = col2;
+    color2_mobile.style.backgroundColor = col2;
     const direction_options = ['right', 'bottom', 'top', 'left', 'left top', 'right top'];
     let rand_number = Math.floor(Math.random() * 6);
     let direction = direction_options[rand_number];
@@ -32,7 +36,7 @@ function generateRandomHexColor() {
 }
 
 function copy() {
-    if (grad.length == 0) {
+    if (background_syntax.length == 0) {
         alert("Please generate a gradient first!");
     }
     else {
@@ -42,8 +46,10 @@ function copy() {
 }
 
 
-color1Preview.addEventListener('click', copy_col1);
 color2Preview.addEventListener('click', copy_col2);
+color1Preview.addEventListener('click', copy_col1);
+color1_mobile.addEventListener('click', copy_col1);
+color2_mobile.addEventListener('click', copy_col2);
 
 function copy_col1(){
     if(col1 != ''){
