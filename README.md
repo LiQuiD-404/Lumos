@@ -19,7 +19,7 @@ Lumos can genrate <B>200+</B> gradients. The gradients are generated with a rand
 
 ![image](https://github.com/LiQuiD-404/Lumos/assets/94376674/d8859b75-39a2-436e-971e-7f0a1cbda0ed)
 
-<I> Like the color scheme, you see? </I> You can even export the individual colors used in a particular gradient using the reference boxes available at the top.
+<I> Like the color scheme you see? </I> You can even export the individual colors used in a particular gradient using the reference boxes available at the top.
 
 ### Tablet View
 ![image](https://github.com/LiQuiD-404/Lumos/assets/94376674/64439851-658c-4069-87ce-8494d674b753)
