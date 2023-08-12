@@ -41,7 +41,14 @@ function copy() {
     }
     else {
         navigator.clipboard.writeText(background_syntax);
-        alert("Copied to Clipboard. Enjoy!");
+        var audio = new Audio('assets/chime.mp3');
+        audio.play();
+        document.getElementById('popup').style.visibility = 'visible'
+        let blur = document.getElementById("welcome");
+        console.log(blur)
+        classlist = blur.classList;
+        classlist.add('blur-2xl')
+        timeout = setTimeout(hide, 1000);
     }
 }
 
@@ -51,17 +58,50 @@ color1Preview.addEventListener('click', copy_col1);
 color1_mobile.addEventListener('click', copy_col1);
 color2_mobile.addEventListener('click', copy_col2);
 
-function copy_col1(){
-    if(col1 != ''){
+function copy_col1() {
+    if (col1 != '') {
         navigator.clipboard.writeText(col1);
-        alert("Copied color to clipboard!")
+        var audio = new Audio('assets/chime.mp3');
+        audio.play();
+        document.getElementById('popup').style.visibility = 'visible'
+        let blur = document.getElementById("welcome");
+        console.log(blur)
+        classlist = blur.classList;
+        classlist.add('blur-2xl')
+        timeout = setTimeout(hide, 1000);
     }
 }
 
-function copy_col2(){
-    if(col2 != ''){
+function copy_col2() {
+    if (col2 != '') {
         navigator.clipboard.writeText(col2);
-        alert("Copied color to clipboard!")
+        var audio = new Audio('assets/chime.mp3');
+        audio.play();
+        document.getElementById('popup').style.visibility = 'visible'
+        let blur = document.getElementById("welcome");
+        console.log(blur)
+        classlist = blur.classList;
+        classlist.add('blur-2xl')
+        timeout = setTimeout(hide, 1000);
     }
 }
 
+let timeout;
+let classlist;
+
+function test() {
+    document.getElementById('popup').style.visibility = 'visible'
+    let blur = document.getElementById("welcome");
+    console.log(blur)
+    classlist = blur.classList;
+    classlist.add('blur-2xl')
+    timeout = setTimeout(hide, 1000);
+
+}
+
+function hide() {
+    document.getElementById('popup').style.visibility = 'hidden'
+    classlist.remove('blur-2xl')
+
+    clearTimeout(timeout)
+}

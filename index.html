@@ -10,7 +10,7 @@
 </head>
 
 <body class="overflow-hidden">
-    <nav class="w-screen h-12 bg-gray-900 text-center items-center justify-around invisible hidden sm:visible sm:flex">
+    <nav id="navb" class="w-screen h-12 bg-gray-900 text-center items-center justify-around invisible hidden sm:visible sm:flex">
         <div class=" flex text-center items-center">
             <h3 class="ml-4 text-bold text-white text-2xl">Lumos </h3>
             <img src="assets/Lumos.png" class="h-7 pl-3">
@@ -61,7 +61,11 @@
         
     </nav>
 
-
+    <div class="h-screen w-screen bg-transparent absolute flex items-center justify-center">
+        <div id="popup" class="bg-gradient-to-r from-zinc-900 to-gray-900 invisible w-72 h-24 bg-slate-600 flex items-center justify-center text-custom text-white rounded-lg text-md font-semibold">
+            Copied to Clipboard. Cheers!
+        </div>
+    </div>
 
     <div class="h-screen w-screen flex items-center justify-center" id="gradient">
         <div class="w-full" id="welcome">
