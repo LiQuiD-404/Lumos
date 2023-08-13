@@ -11,7 +11,7 @@
 
 <body class="overflow-hidden">
     <nav id="navb" class="w-screen h-12 bg-gray-900 text-center items-center justify-around invisible hidden sm:visible sm:flex">
-        <div class=" flex text-center items-center">
+        <div id="logo" class=" flex text-center items-center">
             <h3 class="ml-4 text-bold text-white text-2xl">Lumos </h3>
             <img src="assets/Lumos.png" class="h-7 pl-3">
         </div>
@@ -38,7 +38,7 @@
         </ol>
     </nav>
 
-    <nav class="w-screen h-28 bg-gray-900 text-center items-center justify-center sm:invisible sm:hidden">
+    <nav id="navb_mobile" class="w-screen h-28 bg-gray-900 text-center items-center justify-center sm:invisible sm:hidden">
         <ol class="flex items-center justify-center ">
             <li>
                 <button type="button"
@@ -69,10 +69,10 @@
 
     <div class="h-screen w-screen flex items-center justify-center" id="gradient">
         <div class="w-full" id="welcome">
-            <h1
+            <h1 id="head"
                 class="flex items-center justify-center text-center mb-4 text-[1.5rem] leading-none font-semibold tracking-tight text-[#ffffff] text-custom sm:text-[2.2rem] xl:text-[3rem] lg:px-56">
                 Welcome to Lumos - Your Gateway to Dazzling Gradients!</h1>
-            <p
+            <p id="para"
                 class="flex items-center justify-evenly text-center mb-6 text-md sm:text-lg font-normal text-gray-400 px-6 md:px-40">
                 Unlock a world of vibrant possibilities with Lumos, where creativity and technology converge to bring
                 you stunning gradient backgrounds for your projects. Whether you're a web developer, designer, or simply
@@ -83,7 +83,7 @@
         </div>
 
         
-           
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

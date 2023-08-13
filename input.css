@@ -8,7 +8,7 @@
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
-#gradient{
+#gradient,body{
     background: linear-gradient(to right, #141e30, #243b55);
 }
 

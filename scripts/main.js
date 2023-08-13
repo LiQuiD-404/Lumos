@@ -41,14 +41,12 @@ function copy() {
     }
     else {
         navigator.clipboard.writeText(background_syntax);
-        var audio = new Audio('assets/chime.mp3');
-        audio.play();
         document.getElementById('popup').style.visibility = 'visible'
         let blur = document.getElementById("welcome");
         console.log(blur)
         classlist = blur.classList;
         classlist.add('blur-2xl')
-        timeout = setTimeout(hide, 1000);
+        timeout = setTimeout(hide, 800);
     }
 }
 
@@ -68,7 +66,7 @@ function copy_col1() {
         console.log(blur)
         classlist = blur.classList;
         classlist.add('blur-2xl')
-        timeout = setTimeout(hide, 1000);
+        timeout = setTimeout(hide, 800);
     }
 }
 
@@ -82,7 +80,7 @@ function copy_col2() {
         console.log(blur)
         classlist = blur.classList;
         classlist.add('blur-2xl')
-        timeout = setTimeout(hide, 1000);
+        timeout = setTimeout(hide, 800);
     }
 }
 
@@ -95,7 +93,7 @@ function test() {
     console.log(blur)
     classlist = blur.classList;
     classlist.add('blur-2xl')
-    timeout = setTimeout(hide, 1000);
+    timeout = setTimeout(hide, 800);
 
 }
 
@@ -105,3 +103,33 @@ function hide() {
 
     clearTimeout(timeout)
 }
+
+function generateRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
+let animate = gsap.timeline();
+
+animate.from("#welcome", {
+    y: 700,
+    opacity:0,
+    duration: 0.5,
+    delay: 0.6
+})
+animate.to("#head", {
+    color: "#c0d5fc"
+})
+
+gsap.from("#navb,#navb_mobile", {
+    y: -100,
+    opacity:0,
+    duration: 0.5,
+    delay: 0.5
+})
+
